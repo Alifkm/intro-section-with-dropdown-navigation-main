@@ -21,12 +21,12 @@ $(document).ready(function() {
 
   // layout tab or desktop
   $('#features').hover(function() {
-    $('.nav__item--left:nth-child(1) .nav__icon').toggleClass('active');
-    $('.nav__menu-list--features').toggleClass('active');
+    $('.nav__item--left:nth-child(1) .nav__icon').toggleClass('hover');
+    $('.nav__menu-list--features').toggleClass('hover');
   })
 
   $('#company').hover(function() {
-    $('.nav__item--left:nth-child(2) .nav__icon').toggleClass('active');
-    $('.nav__menu-list--company').toggleClass('active');
+    $('.nav__item--left:nth-child(2) .nav__icon').toggleClass('hover');
+    $('.nav__menu-list--company').toggleClass('hover');
   })
 });

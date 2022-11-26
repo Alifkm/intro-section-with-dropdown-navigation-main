@@ -384,7 +384,7 @@ img {
     #{&}__item + #{&}__item {
       margin: 0 0 0 1em;
     }
-  
+
     #{&}__item--left:nth-child(1), #{&}__item--left:nth-child(2) {
       position: relative;
       padding: 1em 0;
@@ -423,6 +423,24 @@ img {
     #{&}__logo-wrapper {
       margin-right: 3em;
     }
+
+    #{&}__menu-list--features.hover {
+      max-height: 170px;
+      padding: 1.5em;
+      border-radius: 10px;
+    }
+
+    #{&}__menu-list--company.hover {
+      padding: 1.5em;
+    }
+
+    #{&}__item--left:nth-child(1) #{&}__icon.active, #{&}__item--left:nth-child(2) #{&}__icon.active {
+      transform: none;
+    }
+
+    #{&}__item--left:nth-child(1) #{&}__icon.hover, #{&}__item--left:nth-child(2) #{&}__icon.hover {
+      transform: rotate(180deg);
+    } 
 
     #{&}__logo {
       width: 100px;
