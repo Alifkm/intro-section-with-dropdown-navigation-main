@@ -63,11 +63,6 @@ img {
     @include transitionProps(0.2s, ease-out);
   }
 
-  #{&}__logo:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-  }
-
   // nav menu
   #{&}__menu {
     position: fixed;
@@ -125,13 +120,8 @@ img {
     @extend .nav__menu-list--features.active;
   }
 
-  #{&}__item:hover {
+  #{&}__item {
     @include transitionProps(0.2s, ease-out);
-  }
-
-  #{&}__item:hover {
-    cursor: pointer;
-    transform: scale(1.1);
   }
 
   #{&}__item + #{&}__item, #{&}__item--features + #{&}__item--features, #{&}__item--company + #{&}__item--company {
@@ -156,20 +146,10 @@ img {
     border: 2px solid $medium-gray;
   }
 
-  #{&}__item--right:nth-child(2):hover {
-    border: 2px solid black;
-    color: black;
-  }
-
   #{&}__item a {
     text-decoration: none;
     color: $medium-gray;
     @include transitionProps(0.2s, ease-out);
-  }
-
-  #{&}__item a:hover {
-    text-decoration: none;
-    color: black;
   }
 
   #{&}__icon {
@@ -424,6 +404,11 @@ img {
       margin-right: 3em;
     }
 
+    #{&}__logo:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
     #{&}__menu-list--features.hover {
       max-height: 170px;
       padding: 1.5em;
@@ -434,6 +419,11 @@ img {
       padding: 1.5em;
     }
 
+    #{&}__item:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+
     #{&}__item--left:nth-child(1) #{&}__icon.active, #{&}__item--left:nth-child(2) #{&}__icon.active {
       transform: none;
     }
@@ -441,6 +431,16 @@ img {
     #{&}__item--left:nth-child(1) #{&}__icon.hover, #{&}__item--left:nth-child(2) #{&}__icon.hover {
       transform: rotate(180deg);
     } 
+    
+    #{&}__item--right:nth-child(2):hover {
+      border: 2px solid black;
+      color: black;
+    }  
+
+    #{&}__item a:hover {
+      text-decoration: none;
+      color: black;
+    }
 
     #{&}__logo {
       width: 100px;

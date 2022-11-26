@@ -64,12 +64,6 @@ img {
   transition: all 0.2s ease-out;
 }
 
-.nav .nav__logo:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 .nav .nav__menu {
   position: fixed;
   inset: 0 0 0 35%;
@@ -125,15 +119,9 @@ img {
   max-height: 140px;
 }
 
-.nav .nav__item:hover {
+.nav .nav__item {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-}
-
-.nav .nav__item:hover {
-  cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 .nav .nav__item + .nav__item, .nav .nav__item--features + .nav__item--features, .nav .nav__item--company + .nav__item--company {
@@ -160,21 +148,11 @@ img {
   border: 2px solid dimgray;
 }
 
-.nav .nav__item--right:nth-child(2):hover {
-  border: 2px solid black;
-  color: black;
-}
-
 .nav .nav__item a {
   text-decoration: none;
   color: dimgray;
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-}
-
-.nav .nav__item a:hover {
-  text-decoration: none;
-  color: black;
 }
 
 .nav .nav__icon, .nav .nav__icon--features {
@@ -462,6 +440,11 @@ img {
   .nav .nav__logo-wrapper {
     margin-right: 3em;
   }
+  .nav .nav__logo:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
   .nav .nav__menu-list--features.hover, .nav .hover.nav__menu-list--company {
     max-height: 170px;
     padding: 1.5em;
@@ -470,6 +453,11 @@ img {
   .nav .nav__menu-list--company.hover {
     padding: 1.5em;
   }
+  .nav .nav__item:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
   .nav .nav__item--left:nth-child(1) .nav__icon.active, .nav .nav__item--left:nth-child(1) .active.nav__icon--features, .nav .nav__item--left:nth-child(2) .nav__icon.active, .nav .nav__item--left:nth-child(2) .active.nav__icon--features {
     -webkit-transform: none;
             transform: none;
@@ -477,6 +465,14 @@ img {
   .nav .nav__item--left:nth-child(1) .nav__icon.hover, .nav .nav__item--left:nth-child(1) .hover.nav__icon--features, .nav .nav__item--left:nth-child(2) .nav__icon.hover, .nav .nav__item--left:nth-child(2) .hover.nav__icon--features {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
+  }
+  .nav .nav__item--right:nth-child(2):hover {
+    border: 2px solid black;
+    color: black;
+  }
+  .nav .nav__item a:hover {
+    text-decoration: none;
+    color: black;
   }
   .nav .nav__logo {
     width: 100px;
