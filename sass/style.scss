@@ -236,7 +236,7 @@ img {
 
   #{&}__button:hover {
     cursor: pointer;
-    background-color: darken($almost-white, 1%);
+    background-color: $almost-white;
     border: 1px solid $almost-black;
     color: $almost-black;
   }
@@ -286,7 +286,7 @@ img {
 // --------------------
 @include media-md {
   body, body.dark {
-    background-color: darken($almost-white, 1%);
+    background-color: $almost-white;
   }
 
   .nav {
@@ -310,7 +310,7 @@ img {
       flex: 1;
       transform: translateX(0%);
       padding: 0;
-      background-color: darken($almost-white, 1%);
+      background-color: $almost-white;
     }
   
     // li menu list
