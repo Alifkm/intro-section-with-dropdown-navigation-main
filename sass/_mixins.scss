@@ -1,0 +1,29 @@
+@mixin gridProperty($column, $row, $gap) {
+  display: grid;
+  grid-template-columns: $column;
+  grid-template-rows: $row;
+  gap: $gap;
+}
+
+@mixin flexProperty($x-align: center, $y-align: center, $direction: row) {
+  display: flex;
+  justify-content: $x-align;
+  align-items: $y-align;
+  flex-direction: $direction;
+}
+
+@mixin transitionProps($time, $type) {
+  transition: all $time $type; 
+}
+
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 992px) {
+    @content;
+  }
+}

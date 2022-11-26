@@ -9,34 +9,82 @@
 
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </head>
 <body>
 
-  Features
-  Company
-  Careers
-  About
+  <header class="nav container">
+    <div class="nav__logo-wrapper">
+      <img class="nav__logo" src="images/logo.svg" alt="logo">
+    </div>
 
-  Login
-  Register
+    <nav class="nav__menu">
+      <ul class="nav__menu-list nav__menu-list--left">
+        <li id="features" class="nav__item nav__item--left"><a href="#">Features</a><img class="nav__icon" src="images/icon-arrow-down.svg" alt="icon arrow down">
+        
+          <ul class="nav__menu-list--features">
 
-  Make remote work
+            <li class="nav__item--features"><a href="#"><img  class="nav__icon--features" src="images/icon-todo.svg" alt="to do list icon">Todo List</a></li>
+            
+            <li class="nav__item--features"><a href="#"><img class="nav__icon--features" src="images/icon-calendar.svg" alt="calendar icon">Calendar</a></li>
+            
+            <li class="nav__item--features"><a href="#"><img class="nav__icon--features" src="images/icon-reminders.svg" alt="reminder icon">Reminders</a></li>
+            
+            <li class="nav__item--features"><a href="#"><img class="nav__icon--features" src="images/icon-planning.svg" alt="planning icon">Planning</a></li>
+          </ul>  
+        
+        </li>
+        
+        <li id="company" class="nav__item nav__item--left"><a href="#">Company</a><img class="nav__icon" src="images/icon-arrow-down.svg" alt="icon arrow down">
+        
+          <ul class="nav__menu-list--company">
+            <li class="nav__item--company"><a href="#">History</a></li>
+            
+            <li class="nav__item--company"><a href="#">Our Team</a></li>
+            
+            <li class="nav__item--company"><a href="#">Blog</a></li>
+          </ul>
+        
+        </li>
 
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
+        <li class="nav__item nav__item--left"><a href="#">Careers</a></li>
 
-  Learn more
+        <li class="nav__item nav__item--left"><a href="#">About</a></li>
+      </ul>
+      <ul class="nav__menu-list nav__menu-list--right">
+        <li class="nav__item nav__item--right"><a href="#">Login</a></li>
+        <li class="nav__item nav__item--right"><a href="#">Register</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__bar-wrapper">
+      <div class="nav__bar" id="bar"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="image-section">
+      <img class="image-section__image--mobile" src="images/image-hero-mobile.png" alt="image hero mobile">
+      <img class="image-section__image--desktop" src="images/image-hero-desktop.png" alt="image hero mobile">
+    </div>
+
+    <section class="content-section container">
+      <h1 class="content-section__title">Make remote work</h1>
+      <p class="content-section__paragraph">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+      <button class="content-section__button">Learn more</button>
+      <div class="content-section__logo-wrapper">
+        <img class="content-section__company-logo" src="images/client-databiz.svg" alt="databiz icon">
+        <img class="content-section__company-logo" src="images/client-audiophile.svg" alt="audio phile icon">
+        <img class="content-section__company-logo" src="images/client-meet.svg" alt="meet icon">
+        <img class="content-section__company-logo" src="images/client-maker.svg" alt="maker icon">
+      </div>
+    </section>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer class="footer container">
+    Challenge by <a class="footer__text" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="footer__text" target="_blank" href="https://www.frontendmentor.io/profile/Alifkm">Alif Kahfi</a>.
+  </footer>
 </body>
 </html>
