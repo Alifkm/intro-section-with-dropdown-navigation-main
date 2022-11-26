@@ -230,7 +230,7 @@ img {
 
 .content-section .content-section__button:hover {
   cursor: pointer;
-  background-color: #ededed;
+  background-color: #f7f7f7;
   border: 1px solid #141414;
   color: #141414;
 }
@@ -280,7 +280,7 @@ img {
 
 @media screen and (min-width: 768px) {
   body, body.dark {
-    background-color: #ededed;
+    background-color: #f7f7f7;
   }
   .nav {
     display: -webkit-box;
@@ -328,7 +328,7 @@ img {
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     padding: 0;
-    background-color: #ededed;
+    background-color: #f7f7f7;
   }
   .nav .nav__menu-list {
     display: -webkit-box;
